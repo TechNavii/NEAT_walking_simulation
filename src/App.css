@@ -1,0 +1,227 @@
+.appRoot {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.simCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.controls {
+  position: absolute;
+  left: 12px;
+  bottom: 80px;
+  z-index: 100;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(17, 24, 39, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.controls button {
+  padding: 6px 12px;
+  background: rgba(59, 130, 246, 0.8);
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: rgba(59, 130, 246, 1);
+}
+
+.controlRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+}
+
+.controlRow select {
+  height: 28px;
+}
+
+.controlToggle {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+}
+
+.panel {
+  background: rgba(17, 24, 39, 0.72);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  color: rgba(255, 255, 255, 0.92);
+  min-width: 220px;
+}
+
+.panelHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.panelTitle {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.panelRight {
+  font-size: 12px;
+  opacity: 0.95;
+}
+
+.panelBody {
+  padding: 10px;
+}
+
+.hudTopLeft {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+
+.hudTopCenter {
+  position: absolute;
+  left: 50%;
+  top: 12px;
+  transform: translateX(-50%);
+}
+
+.hudTopRight {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.hudRightMiddle {
+  position: absolute;
+  right: 12px;
+  top: 210px;
+}
+
+.hudRightBottom {
+  position: absolute;
+  right: 12px;
+  bottom: 90px;
+}
+
+.hudBottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 12px;
+}
+
+.bottomStrip {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 12px;
+  background: rgba(17, 24, 39, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(6px);
+}
+
+.mono {
+  font-variant-numeric: tabular-nums;
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 6px 10px;
+  font-size: 12px;
+}
+
+.barList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+}
+
+.barLabel {
+  opacity: 0.9;
+}
+
+.barTrack {
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+}
+
+.activationTrack {
+  position: relative;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.activationMid {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.activationDot {
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.9);
+  transform: translate(-50%, -50%);
+}
+
+.sparkline {
+  width: 240px;
+  height: 64px;
+  display: block;
+}
+
+.networkSvg {
+  width: 260px;
+  height: 160px;
+  display: block;
+}
+
+.muted {
+  opacity: 0.7;
+  font-size: 12px;
+}
