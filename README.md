@@ -39,6 +39,3 @@ npm run preview
 - **Replay Best** - Watch the all-time best performer
 - **Compare Generations** - Toggle generation comparison view
 
-## License
-
-MIT
